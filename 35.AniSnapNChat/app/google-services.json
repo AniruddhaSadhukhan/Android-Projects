@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "943952765130",
+    "firebase_url": "https://anisnap-n-chat.firebaseio.com",
+    "project_id": "anisnap-n-chat",
+    "storage_bucket": "anisnap-n-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943952765130:android:0bb6912d6a23a63e",
+        "android_client_info": {
+          "package_name": "com.ani.anisnapnchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdr4V_BsNZRr9jmw_GK1Jv1Jh2qEw0Y8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943952765130-3p86dtt4muuk83ddt2n7o1lnnnl9rgcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

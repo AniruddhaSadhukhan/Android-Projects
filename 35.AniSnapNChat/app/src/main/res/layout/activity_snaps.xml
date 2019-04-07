@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnapsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/lightBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="0dp"
+        android:theme="?attr/actionBarTheme"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AniSnap N Chat "
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="12dp" />
+
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@color/lightBlue"
+            android:elevation="0dp"
+            android:onClick="logOut"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/logout"
+            tools:layout_editor_absoluteX="328dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/newChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="newSnap"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/chat"
+        app:backgroundTint="@android:color/transparent"
+        app:elevation="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
